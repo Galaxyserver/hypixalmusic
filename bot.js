@@ -341,5 +341,9 @@ client.on('message', message => {
       message.channel.send(helpEmbed);
     }
 });
+client.on('ready', ready => {
+client.user.setGame(`1play|HypixalArab`,`https://twitch.tv/ichbinxirdx`)
+});
+
 
 client.login(process.env.BOT_TOKEN);
